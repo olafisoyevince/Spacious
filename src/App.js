@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './index.css'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import NavBar from './components/NavBar'
+import Tabs from './components/Tabs'
+// import Planets from './components/Planets'
 
-function App() {
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Container className="p-3">
+      <Row >
+
+        <NavBar />
+        <Tabs />
+
+
+      </Row>
+    </Container>
+  )
 }
 
-export default App;
+export default App

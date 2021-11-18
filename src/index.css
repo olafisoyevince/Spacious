@@ -1,13 +1,117 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-light a.navbar-brand,
+.navbar-light a.navbar-brand:hover {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: 1px;
+  color: #121C33;
+}
+
+.nav-link {
+  color:#121C33 !important;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link,
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link:hover {
+  background-color: rgba(18, 28, 51, 0.05) !important;
+  color: #121C33 !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.planet-card {
+  width: 272px;
+  height: 230px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  color: #121C33
+}
+
+.planet img {
+  width: 240px;
+  height: 150px;
+}
+
+.character-card {
+  width: 240px;
+  height: 220px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  color: #121C33
+}
+
+.character img{
+  width: 240px;
+  height: 150px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.sidebar-name{
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 48px;
+  color: #121C33;
+}
+
+.sidebar-text{
+  color: #121C33;
+}
+
+.sidebar-no, .sidebar-details{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #121C33;
+}
+
+.sidebar-details{
+  opacity: 0.6;
+}
+
+.person-img{
+  width: 72px;
+  height: 68px;
+  border-radius: 8px;
+}
+
+.person-name{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.person-info{
+  font-size: 12px;
+  color: #121C33;
+
+}
+
+.sidebar {
+  width: 25%;
+  background-color: white;
+  padding: 5px;
+  position: fixed;
+  border-radius: 8px;
+  top: 4rem;
+  right: 2rem; 
+}
+
+.additem {
+  position: fixed;
+  bottom: 4rem;
+  right: 13rem;    
 }
