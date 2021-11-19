@@ -16,13 +16,13 @@ export const PlanetForm = () => {
   return (
     <>
 
-      <div className="d-flex justify-content-end">
+      <div className="d-flex">
         <AiFillPlusCircle style={{ fontSize: "50px" }} onClick={handleShow} />
       </div>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Planets</Modal.Title>
+          <Modal.Title className="bigger-font">Planets</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form>

@@ -3,16 +3,20 @@ import { characters } from '../components/Data'
 import { useState } from 'react'
 import Sidebar from '../components/Sidebar'
 import Container from 'react-bootstrap/Container'
-import Button from 'react-bootstrap/Button'
 import CharacterForm from './CharacterForm'
-import { IoAdd } from "react-icons/io5";
+
 
 
 
 const Characters = () => {
 
   const [isAppear, setAppear] = useState(false)
-  const [showForm, setshowForm] = useState(false)
+  const [value, setValue] = useState({})
+  const dynamicFunction = (character) => {
+    setAppear(true)
+    setValue({ name: character.title })
+  }
+
 
   return (
     <Container>
@@ -20,7 +24,7 @@ const Characters = () => {
         {
           characters.map(character => {
             return (
-              <div className="my-2 mx-2 character-card" onClick={() => setAppear(true)}>
+              <div className="my-2 mx-2 character-card" onClick={() => dynamicFunction(character)} key={character.id}>
                 <div className="character">
                   <img src={character.image} alt="" className="m-auto" />
                 </div>
@@ -29,18 +33,13 @@ const Characters = () => {
                   <div className="fw-bold">{character.title}</div>
                   <div className="opacity-50">{character.body}</div>
                 </div>
-                {isAppear ? <Sidebar /> : ""}
+                {isAppear ? <Sidebar name={value.name} /> : ""}
               </div>
             )
           })
         }
       </div>
-      <div>
-        <Button variant="dark" className="additem" onClick={() => setshowForm(true)}>
-          <IoAdd />
-        </Button>
-        {showForm ? <CharacterForm /> : ""}
-      </div>
+      <CharacterForm />
     </Container>
   )
 }

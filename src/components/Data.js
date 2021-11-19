@@ -33,25 +33,25 @@ export let planets = [
   {
     id: 2,
     image: planet2,
-    title: 'Planet Alpha',
+    title: 'Planet Gamma',
     body: 'Pop: 235'
   },
   {
     id: 3,
     image: planet3,
-    title: 'Planet Alpha',
+    title: 'Planet Beta',
     body: 'Pop: 235'
   },
   {
     id: 4,
     image: planet4,
-    title: 'Planet Alpha',
+    title: 'Planet Omega',
     body: 'Pop: 235'
   },
   {
     id: 5,
     image: planet5,
-    title: 'Planet Alpha',
+    title: 'Planet Phi',
     body: 'Pop: 235'
   },
   {
@@ -63,13 +63,13 @@ export let planets = [
   {
     id: 7,
     image: planet7,
-    title: 'Planet Alpha',
+    title: 'Planet Gamma',
     body: 'Pop: 235'
   },
   {
     id: 8,
     image: planet8,
-    title: 'Planet Alpha',
+    title: 'Planet Omega',
     body: 'Pop: 235'
   },
   {
@@ -81,19 +81,19 @@ export let planets = [
   {
     id: 10,
     image: planet4,
-    title: 'Planet Alpha',
+    title: 'Planet Phi',
     body: 'Pop: 235'
   },
   {
     id: 11,
     image: planet5,
-    title: 'Planet Alpha',
+    title: 'Planet Apollo',
     body: 'Pop: 235'
   },
   {
     id: 12,
     image: planet6,
-    title: 'Planet Alpha',
+    title: 'Planet Beta',
     body: 'Pop: 235'
   }
 ]

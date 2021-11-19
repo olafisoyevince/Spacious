@@ -110,8 +110,11 @@ body{
   right: 2rem; 
 }
 
-.additem {
-  position: fixed;
-  bottom: 4rem;
-  right: 13rem;    
+.bigger-font {
+  font-weight: 900 !important;
+  font-size: 48px !important;
+  line-height: 72px !important;
+  letter-spacing: 1px !important;
+  color: #121C33 !important;
 }
+

@@ -4,7 +4,6 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import NavBar from './components/NavBar'
 import Tabs from './components/Tabs'
-// import Planets from './components/Planets'
 
 
 

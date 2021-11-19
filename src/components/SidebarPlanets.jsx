@@ -9,7 +9,7 @@ import character6 from '../images/characters/character-6.png'
 
 
 
-const SideBar = (props) => {
+const SidebarPlanets = (props) => {
 
   return (
     <div>
@@ -17,12 +17,11 @@ const SideBar = (props) => {
       <div className="sidebar">
         <div className="alpha-content py-5 px-4">
           <h2 className="sidebar-name">{props.name}</h2>
-          <p className="sidebar-text"> {props.name} is really a nice person, she's been
-            living on Planet Alpha for the last 10 years.
+          <p className="sidebar-text"> {props.name} is the place to be if you like everything related to planets. I know it’s a bit meta, but come see by yourself.
           </p>
-          <div className="d-flex">
-            <p className="pe-5">Planet<br /><span className="sidebar-no">Alpha</span> </p>
-            <p>Friends<br /><span className="sidebar-no">23</span> </p>
+          <div className="">
+
+            <p>Population<br /><span className="sidebar-no">23</span> </p>
           </div>
 
           <div className="sidebar-details">
@@ -89,4 +88,4 @@ const SideBar = (props) => {
   )
 }
 
-export default SideBar
+export default SidebarPlanets

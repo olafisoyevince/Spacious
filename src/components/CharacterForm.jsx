@@ -2,15 +2,28 @@ import React from 'react'
 import Modal from 'react-bootstrap/Modal'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
+import { useState } from 'react'
+import { AiFillPlusCircle } from "react-icons/ai"
 
 const PlanetForm = () => {
-  return (
-    <div>
-      <Modal.Dialog>
-        <Modal.Header closeButton>
-          <Modal.Title>Characters</Modal.Title>
-        </Modal.Header>
 
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+
+  return (
+    <>
+
+      <div className="d-flex">
+        <AiFillPlusCircle style={{ fontSize: "50px" }} onClick={handleShow} />
+      </div>
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title className="bigger-font">Characters</Modal.Title>
+        </Modal.Header>
         <Modal.Body>
           <Form>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -34,13 +47,16 @@ const PlanetForm = () => {
             </Form.Select>
           </Form>
         </Modal.Body>
-
         <Modal.Footer>
-          <Button variant="secondary">Cancel</Button>
-          <Button variant="primary">Create Character</Button>
+          <Button variant="secondary" onClick={handleClose}>
+            Cancel
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Create Character
+          </Button>
         </Modal.Footer>
-      </Modal.Dialog>
-    </div>
+      </Modal>
+    </>
   )
 }
 
